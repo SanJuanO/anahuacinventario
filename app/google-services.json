@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "598175403920",
+    "firebase_url": "https://inventarios-uap.firebaseio.com",
+    "project_id": "inventarios-uap",
+    "storage_bucket": "inventarios-uap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598175403920:android:6bc8de7dcd25aee62aad15",
+        "android_client_info": {
+          "package_name": "com.gesdes.android.puebla.anahuac"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598175403920-imb625d06i4doe78226801dmkmk2qv29.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNdxKZ3BkiZk0H9pVJxmSxfaqOp1cpWtg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598175403920-imb625d06i4doe78226801dmkmk2qv29.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

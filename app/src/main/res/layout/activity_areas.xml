@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+    android:background="@color/white"
+android:layout_height="match_parent"
+    tools:context="com.gesdes.android.puebla.anahuac.Fabrica">
+
+    <TextView
+        android:id="@+id/tituloscategoria"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/ARED"
+        android:fontFamily="sans-serif"
+        android:foregroundGravity="center"
+        android:freezesText="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Areas"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+    <ImageButton
+        android:id="@+id/agregarn"
+        android:layout_width="70dp"
+        android:background="@color/ARED"
+        android:tint="@color/white"
+        android:src="@drawable/plus"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:text="Button" />
+    <EditText
+        android:shadowRadius="@android:integer/config_longAnimTime"
+        android:id="@+id/searchFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tituloscategoria"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+style="@style/editext"
+        android:drawableRight="@android:drawable/ic_menu_search"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/searchFilter"
+    android:background="@color/white"
+    android:textColor="@color/black"
+    android:textAlignment="center"
+    android:textSize="48dp"
+    android:id="@+id/textonodisponible"
+    android:layout_marginTop="40dp"
+    />
+
+    <ListView
+        android:id="@+id/theList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchFilter"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-2dp"
+        android:backgroundTint="@color/black"
+        android:cacheColorHint="@color/black"
+        android:divider="@color/black"
+        android:dividerHeight="@dimen/cardview_compat_inset_shadow"
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black" />
+
+
+</RelativeLayout>

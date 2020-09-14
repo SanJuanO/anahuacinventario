@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.AgregarProducto"
+    android:background="@color/white"
+    >
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <ImageView
+                android:id="@+id/foton"
+                android:layout_width="120sp"
+                android:layout_height="120sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:src="@drawable/foto"/>
+            <TextView
+                android:id="@+id/nombren"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Nombre"
+
+                android:layout_toEndOf="@+id/foton"
+                android:textColor="#03A9F4"
+                />
+            <EditText
+                android:id="@+id/enombren"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/aa1"
+                android:textColorHighlight="@color/black"
+                android:backgroundTint="@color/black"
+                android:layout_toEndOf="@+id/foton"
+                android:inputType="text"
+                android:layout_below="@+id/nombren"             />
+            <TextView
+                android:id="@+id/descripn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Descripcion"
+                android:layout_below="@+id/enombren"
+                android:layout_toEndOf="@+id/foton"
+                android:textColor="#03A9F4"
+                />
+            <EditText
+                android:id="@+id/edescripn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColorHighlight="@color/black"
+                android:backgroundTint="@color/black"
+                android:layout_toEndOf="@+id/foton"
+                android:inputType="text"
+                android:layout_below="@+id/descripn"
+                app:layout_constraintStart_toStartOf="@id/descripn"
+                />
+
+            <TextView
+                android:id="@+id/fabricanten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="Fabricante"
+
+                android:textColor="#03A9F4"
+                android:layout_below="@+id/foton"
+                />
+
+            <EditText
+                android:id="@+id/efabricanten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColorHighlight="@color/black"
+                android:backgroundTint="@color/black"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_below="@id/fabricanten"/>
+
+            <TextView
+                android:id="@+id/codigon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="Codigo"
+
+                android:textColor="#03A9F4"
+                android:layout_below="@+id/efabricanten"
+                />
+
+            <EditText
+                android:id="@+id/ecodigon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColorHighlight="@color/black"
+                android:backgroundTint="@color/black"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_below="@id/codigon"/>
+            <TextView
+                android:id="@+id/categorian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="Categoria"
+
+                android:textColor="#03A9F4"
+                android:layout_below="@+id/ecodigon"
+                />
+
+            <EditText
+                android:id="@+id/ecategorian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColorHighlight="@color/black"
+                android:backgroundTint="@color/black"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_below="@id/categorian"/>
+            <TextView
+                android:id="@+id/ubicacionn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="Ubicacion"
+
+                android:textColor="#03A9F4"
+                android:layout_below="@+id/ecategorian"
+                />
+
+            <EditText
+                android:id="@+id/eubicacionn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColorHighlight="@color/black"
+                android:backgroundTint="@color/black"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_below="@id/ubicacionn"/>
+            <TextView
+                android:id="@+id/cantidadn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="Cantidad:"
+
+                android:textColor="#03A9F4"
+                android:layout_below="@+id/eubicacionn"
+                />
+
+            <EditText
+                android:id="@+id/ecantidadn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHighlight="@color/black"
+                android:backgroundTint="@color/black"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_toEndOf="@+id/cantidadn"
+
+                android:layout_below="@id/eubicacionn"/>
+            <TextView
+                android:id="@+id/coston"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="Costo:"
+
+                android:textColor="#03A9F4"
+                android:layout_below="@+id/ecantidadn"
+                />
+
+            <EditText
+                android:id="@+id/ecoston"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColorHighlight="@color/black"
+                android:backgroundTint="@color/black"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_toEndOf="@+id/cantidadn"
+
+                android:layout_below="@id/ecantidadn"/>
+            <TextView
+                android:id="@+id/notasn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="Nota:"
+
+                android:textColor="#03A9F4"
+                android:layout_below="@+id/ecoston"
+                />
+
+            <EditText
+                android:id="@+id/enotasn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/black"
+                android:backgroundTint="@color/black"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_toEndOf="@+id/cantidadn"
+
+                android:layout_below="@id/ecoston"/>
+
+            <Button
+                android:id="@+id/btnCerrarSesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:text="Crear"
+                style="@style/btnred"
+                android:layout_below="@+id/enotasn" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

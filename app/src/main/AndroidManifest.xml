@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gesdes.android.puebla.anahuac">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/a"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/a"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Modificar"></activity>
+        <activity android:name=".Informe" />
+        <activity android:name=".Fotografias" />
+        <activity android:name=".Configuracion.Agregarmedida" />
+        <activity android:name=".Configuracion.Agregarcentro" />
+        <activity android:name=".Notificaciones" />
+        <activity android:name=".Mantenimiento" />
+        <activity android:name=".Configuracion.Departamentos" />
+        <activity android:name=".Configuracion.Subareasagregar" />
+        <activity android:name=".Fotoadd" />
+        <activity android:name=".Encargados" />
+        <activity android:name=".Areas" />
+        <activity android:name=".Configuracion.Agregarareas" />
+        <activity android:name=".SubAreas" />
+        <activity android:name=".Configuracion.SubAgregarareas" />
+        <activity android:name=".Configuracion.Categorias" />
+        <activity android:name=".Configuracion.Agregarubicacion" />
+        <activity android:name=".Configuracion.Agregarprovedor" /> <!-- The below is for the splash screen and we need no action bar and the default theme -->
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Foto" />
+        <activity android:name=".Escanearqr" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".Fabrica" />
+        <!--
+ Set custom default icon. This is used when no icon is set for incoming notification messages.
+             See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/a" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".Utilidades.MyFirebaseMessagingService"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Detalle" />
+        <activity android:name=".ConnectActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".PrintfBlueListActivity" />
+
+        <receiver
+            android:name=".Receiver.NameOfBroadcastReceiverClass"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" /> <!-- 蓝牙适配器状态改变 -->
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED" /> <!-- 连接已经断开 -->
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Escanearqr"
+    >
+
+
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@color/white"
+        android:scrollbars="none" >
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/ARED"
+                    android:foregroundGravity="center"
+                    android:freezesText="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Escanear Producto"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/boleto"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/textView2"
+                    android:textAlignment="center"
+                    android:text="Escanear boleto"
+                    android:textSize="32dp"
+                    android:layout_marginTop="20dp"
+
+
+
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="6dp"
+                    android:layout_below="@id/textView2"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="10"
+                        >
+
+                        <com.journeyapps.barcodescanner.DecoratedBarcodeView
+                            android:id="@+id/barcodeView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:zxing_scanner_layout="@layout/custom_barcode_layout"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="9"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="5"
+
+                            >
+
+
+                            <Button
+                                android:id="@+id/btnTorch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:background="@color/ARED"
+                                android:text="Lampara"
+                                android:textAlignment="center" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

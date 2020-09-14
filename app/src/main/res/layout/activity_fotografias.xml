@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fotografias">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+>
+    <TextView
+        android:id="@+id/tituloscategoria"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/ARED"
+        android:foregroundGravity="center"
+        android:freezesText="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Imagenes"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        />
+    <ImageButton
+        android:id="@+id/agregarimagen"
+        android:layout_width="70dp"
+        android:background="@color/ARED"
+        android:tint="@color/white"
+        android:src="@drawable/plus"
+        android:layout_height="70dp"
+
+        android:layout_alignParentRight="true"
+        android:text="Button" />
+
+
+    <include layout="@layout/content" />
+</RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

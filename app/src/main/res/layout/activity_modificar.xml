@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Modificar"
+    android:background="@color/white"
+    >
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Titulodetalle"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/ARED"
+                android:fontFamily="sans-serif"
+                android:foregroundGravity="center"
+                android:freezesText="true"
+                android:gravity="center"
+                android:lines="2"
+                android:singleLine="true"
+                android:text="Modificar"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Nombre"
+android:layout_below="@id/Titulodetalle"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="#03A9F4"
+                />
+
+
+            <EditText
+                android:id="@+id/enombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nombre"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toEndOf="@+id/foton"
+                android:backgroundTint="@color/black"
+                android:ems="10"
+                android:inputType="text"
+android:textColor="@color/black"
+
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/modelo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="Modelo"
+
+                android:textColor="#03A9F4"
+                android:layout_below="@+id/eubicacionn"
+                />
+
+            <EditText
+                android:id="@+id/emodelo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/modelo"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+
+                android:inputType="text"
+            />
+
+            <TextView
+                android:id="@+id/serie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="Serie"
+
+                android:textColor="#03A9F4"
+                android:layout_below="@+id/emodelo"
+                />
+
+            <EditText
+                android:id="@+id/eserie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/serie"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-4dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="@color/black"
+                android:ems="10"
+                android:textColor="@color/black"
+
+                android:inputType="text"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/nota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="Nota"
+
+                android:textColor="#03A9F4"
+                android:layout_below="@+id/eserie"
+                />
+
+            <EditText
+                android:id="@+id/enota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textSize="12dp"
+
+                android:textColor="@color/black"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_below="@id/nota"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="Ubicación:"
+android:id="@+id/ubicacion"
+                android:textColor="#03A9F4"
+                android:layout_below="@+id/enombre"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/eubicacionn"
+                android:layout_below="@id/ubicacion"
+                android:weightSum="7">
+
+                <EditText
+                    android:id="@+id/eubicacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:textColorHighlight="@color/black"
+                    android:backgroundTint="@color/black"
+                    android:ems="10"
+                    android:layout_weight="6"
+                    android:textColor="@color/black"
+                    android:enabled="false"
+                    android:textSize="14dp"
+                    android:inputType="text"
+                    android:layout_below="@id/ubicacionn"/>
+                <ImageButton
+                    android:id="@+id/btnubicacion"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/next"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnmod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:text="Modificar     "
+                style="@style/btnred"
+            android:onClick="btnmodificar"
+                android:layout_below="@+id/enota"
+               />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Informe">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/resultado"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+
+                <TextView
+                    android:id="@+id/tituloscategoria"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/ARED"
+                    android:fontFamily="sans-serif"
+                    android:foregroundGravity="center"
+                    android:freezesText="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Informes"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tituloscategoria"
+
+                    android:orientation="vertical"
+                    android:weightSum="4">
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lltd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll4"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="Atrazados:"
+                            android:textColor="@color/ARED"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/atrazados"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:enabled="false"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/ARED" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="Avisos:"
+                            android:textColor="@color/ARED"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/avisos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:enabled="false"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/ARED" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lltb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lltd"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="Articulos Nuevos:"
+                            android:textColor="@color/ARED"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/articulosNuevos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+
+                            android:enabled="false"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/ARED" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="Articulos Buenos:"
+                            android:textColor="@color/ARED"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/articulosBuenos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:enabled="false"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/ARED" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lltb"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="Articulos Regulares:"
+                            android:textColor="@color/ARED"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/articulosRegulares"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+
+                            android:enabled="false"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/ARED" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ult"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="Articulos Malos"
+                            android:textColor="@color/ARED"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/articulosMalos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:enabled="false"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/ARED" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pie"
+                    android:layout_below="@id/llta"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"></com.github.mikephil.charting.charts.PieChart>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

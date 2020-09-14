@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#052A5F</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#DF6F05</color>
+    <color name="fondo">#052A5F</color>
+    <color name="botonfondo">#DF6F05</color>
+    <color name="botonfondosubmit">#E89C54</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="aanahuac">#FB4107</color>
+    <color name="aa1">#FD8C0A</color>
+    <color name="aa2">#7D3B0A</color>
+
+    <color name="grey">#d3d3d3</color>
+    <color name="ARED">#FF0000</color>
+    <color name="afondo">#FFEEED</color>
+    <color name="afond">#E4DDDD</color>
+    <color name="ablu">#03A9F4</color>
+    <color name="atex">#908282</color>
+
+</resources>

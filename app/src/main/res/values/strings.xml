@@ -1,0 +1,293 @@
+<resources>
+    <string name="app_name">Anahuac Inventarios</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="URL_API_ARTICULOS">https://uap-inventarios-wa.azurewebsites.net/api/ArticulosApi/</string>
+    <string name="URL_API_PROVEDORES">https://uap-inventarios-wa.azurewebsites.net/api/ProveedoresApi/</string>
+    <string name="URL_API_CENTRO">https://uap-inventarios-wa.azurewebsites.net/api/CentrosCostosApi/</string>
+    <string name="URL_API_CLASES">https://uap-inventarios-wa.azurewebsites.net/api/ClasesApi/</string>
+    <string name="URL_API_UNIDADES">https://uap-inventarios-wa.azurewebsites.net/api/UnidadesMedidasApi/</string>
+    <string name="URL_API_UBICACION">https://uap-inventarios-wa.azurewebsites.net/api/UbicacionesApi/</string>
+    <string name="URL_API_AREA">https://uap-inventarios-wa.azurewebsites.net/api/AreasApi/</string>
+
+    <!-- Regular UI text -->
+    <string name="connect_button_text">Connect to Office 365</string>
+    <string name="send_mail_button_text">Send e-mail</string>
+    <string name="disconnect_menu_item_text">Disconnect</string>
+    <string name="title_text">Hi\u00A0</string>
+    <string name="description_text">\nYou\'re now connected to Office 365. Tap the button below to send a message from your account using the Office 365 SDK.\n</string>
+    <string name="conclusion_text">\nCheck your inbox, you have a new message :)</string>
+
+    <!-- Toast successful messages -->
+    <string name="connect_toast_text">Connected to Office 365</string>
+    <string name="discover_toast_text">Found Office 365 mail service</string>
+    <string name="send_mail_toast_text">Mail sent</string>
+    <string name="disconnect_toast_text">Disconnected from Office 365</string>
+
+    <!-- TextView Error messages -->
+    <string name="title_text_error">Oops!</string>
+    <string name="connect_text_error">\nSorry, can\'t connect to Office 365.\nHint: Check logcat for details.</string>
+    <string name="discover_text_error">\nSorry, can\'t find the mail service.\nHint: Check logcat for details.</string>
+    <string name="send_mail_text_error">\nSorry, can\'t send the email.\nHint: Check logcat for details.</string>
+
+    <!-- Toast error messages -->
+    <string name="connect_toast_text_error">Error al conectar Office 365</string>
+    <string name="discover_toast_text_error">Error finding mail service\nCheck logcat for details</string>
+    <string name="send_mail_toast_text_error">Error sending email\nCheck logcat for details</string>
+    <string name="warning_client_id_redirect_uri_incorrect">The client ID or redirect URI is not valid. Enter a valid client ID and redirect URI in the Constants.java file and run again</string>
+
+    <!-- Email text -->
+    <string name="mail_subject_text">Welcome to Office 365 development on Android with the Office 365 Connect sample</string>
+    <string name="mail_body_text" formatted="false">&lt;html&gt;&lt;head&gt;
+&lt;meta http-equiv=\'Content-Type\' content=\'text/html; charset=us-ascii\'&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=\'font-family:calibri\'&gt;
+&lt;h2&gt;Congratulations, {0}!&lt;/h2&gt;
+&lt;p&gt;This is a message from the Office 365 Connect sample. You are well on your way to incorporating Office 365 services
+in your apps.
+&lt;/p&gt;
+&lt;p&gt;What&amp;#8217;s next?&lt;/p&gt;
+&lt;p&gt;You can use the classes in the Android Studio project to integrate Office 365 services and data into your own apps.&lt;/p&gt;
+&lt;h2&gt;Give us feedback&lt;/h2&gt;
+&lt;p&gt;We hope you found this sample useful. We&amp;#8217;d love to hear from you, so drop us an email at
+&lt;a href=\'mailto:docthis@microsoft.com?subject=Feedback%20on%20the%20Office%20365%20Connect%20sample\'&gt;
+docthis@microsoft.com&lt;/a&gt; with your comments or &lt;a href=\'http://aka.ms/o365-android-connect-issues\'&gt;
+log an issue&lt;/a&gt; on our repository. &lt;/p&gt;
+&lt;p&gt;For more details on what else you can do with the Office 365 services in your Android app, start with the
+&lt;a href=\'http://aka.ms/o365-android-connect-getstarted\'&gt;Getting started&lt;/a&gt; page on dev.office.com.
+&lt;/p&gt;
+&lt;p&gt;Thanks, and happy coding!&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Your Office 365 Development team &lt;/p&gt;
+&lt;div style=\'text-align:center; font-family:calibri\'&gt;
+&lt;table style=\'width:100%; font-family:calibri\'&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=\'http://aka.ms/o365-android-connect\'&gt;See on GitHub&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;&lt;a href=\'http://aka.ms/o365-android-connect-uservoice\'&gt;Suggest on UserVoice&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;&lt;a href=\'http://twitter.com/share?text=I%20just%20started%20developing%20apps%20for%20%23Android%20using%20the%20%23Office365%20Connect%20app%20%40OfficeDev&amp;amp;url=https://github.com/OfficeDev/O365-Android-Connect\'&gt;Share on Twitter&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</string>
+
+
+    <string name="new_and_select_label">new_and_select_label</string>
+    <string name="no_connect_blue_tooth">no_connect_blue_tooth</string>
+    <string name="new_label">new_label</string>
+    <string name="print_label">print_label</string>
+    <string name="fast_label">fast_label</string>
+    <string name="label_mode">label_mode</string>
+    <string name="label">label</string>
+    <string name="insert">insert</string>
+    <string name="attribute">attribute</string>
+    <string name="content">content</string>
+    <string name="back">Regresar</string>
+    <string name="printf_blue_list">Dispositibos bluetooth</string>
+    <string name="template_list">template_list</string>
+    <string name="printf_blue_list_search">Buscar</string>
+    <string name="printf_blue_list_stop">Detener</string>
+    <string name="main_title">main_title</string>
+    <string name="label_attribute">label_attribute</string>
+    <string name="data_content">data_content</string>
+    <string name="label_name">label_name</string>
+    <string name="label_w">label_w</string>
+    <string name="label_h">label_h</string>
+    <string name="label_interval">label_interval</string>
+    <string name="label_printf_direction">label_printf_direction</string>
+    <string name="data_type">data_type</string>
+    <string name="label_paper_interval">label_paper_interval</string>
+    <string name="label_paper_consecutively">label_paper_consecutively</string>
+    <string name="label_paper_location_hole">label_paper_location_hole</string>
+    <string name="label_paper_clearance_paper">label_paper_clearance_paper</string>
+    <string name="label_paper_black">label_paper_black</string>
+    <string name="interval_length">interval_length</string>
+    <string name="picture">picture</string>
+    <string name="background_picture">background_picture</string>
+    <string name="picture_name">picture_name</string>
+    <string name="no_picture">no_picture</string>
+    <string name="select_picture">select_picture</string>
+    <string name="clear_picture">clear_picture</string>
+    <string name="printf_migration">printf_migration</string>
+    <string name="left_distance">left_distance</string>
+    <string name="right_distance">right_distance</string>
+    <string name="no">no</string>
+    <string name="manual_input">manual_input</string>
+    <string name="gradient_of_data">gradient_of_data</string>
+    <string name="current_content">Dispositivos</string>
+    <string name="pass_the_variable">pass_the_variable</string>
+    <string name="word_space">word_space</string>
+    <string name="gradient_of_the_number">gradient_of_the_number</string>
+    <string name="horizontal_center">horizontal_center</string>
+    <string name="vertical_center">vertical_center</string>
+    <string name="rotation_angle">rotation_angle</string>
+    <string name="qr_code">qr_code</string>
+    <string name="qc_code">qc_code</string>
+    <string name="typeface">typeface</string>
+    <string name="error_correction_level">error_correction_level</string>
+    <string name="text_position">text_position</string>
+    <string name="no_text">no_text</string>
+    <string name="low">low</string>
+    <string name="medium">medium</string>
+    <string name="height">height</string>
+    <string name="strong">strong</string>
+    <string name="cancel">cancel</string>
+    <string name="determine">determine</string>
+    <string name="please_improve_the_parameters">please_improve_the_parameters！</string>
+    <string name="set_label_content">set_label_content</string>
+    <string name="company_mm">company_mm</string>
+    <string name="abnormal_data">abnormal_data</string>
+    <string name="please_enter_content">please_enter_content</string>
+    <string name="current_single">current_single</string>
+    <string name="current_more">current_more</string>
+    <string name="single">single</string>
+    <string name="more">more</string>
+    <string name="position_size">position_size</string>
+    <string name="position_left">position_left</string>
+    <string name="position_top">position_top</string>
+    <string name="position_w">position_w</string>
+    <string name="position_h">position_h</string>
+    <string name="horizontal_position">horizontal_position</string>
+    <string name="vertical_position">vertical_position</string>
+    <string name="barcode_above">barcode_above</string>
+    <string name="barcode_below">barcode_below</string>
+    <string name="typeface_name">typeface_name</string>
+    <string name="bar_code">bar_code</string>
+    <string name="typeface_size">typeface_size</string>
+    <string name="align_text">align_text</string>
+    <string name="center">center</string>
+    <string name="left_center">left_center</string>
+    <string name="right_center">right_center</string>
+    <string name="stretching">stretching</string>
+    <string name="size">size</string>
+    <string name="font_too_small">font_too_small</string>
+    <string name="connection_success">Conexion exitosa</string>
+    <string name="connection_fail">Sin conexion</string>
+    <string name="connection_close">conexion cerrada</string>
+    <string name="text">text</string>
+    <string name="one_double">one_double</string>
+    <string name="one_tow_double">one_tow_double</string>
+    <string name="one_five_double">one_five_double</string>
+    <string name="tow_double">tow_double</string>
+    <string name="custom">custom</string>
+    <string name="row_spacing">row_spacing</string>
+    <string name="save_mistake">save_mistake</string>
+    <string name="save_success">save_success</string>
+    <string name="do_you_need_to_keep_it">do_you_need_to_keep_it？</string>
+    <string name="prompt">prompt</string>
+    <string name="again_reflection">again_reflection</string>
+    <string name="save">save</string>
+    <string name="no_save">no_save</string>
+    <string name="data_error">data_error</string>
+    <string name="please_input_name">please_input_name</string>
+    <string name="name">name</string>
+    <string name="link">link</string>
+    <string name="newly_build">newly_build</string>
+    <string name="rectangle">rectangle</string>
+    <string name="table">table</string>
+    <string name="data">data</string>
+    <string name="open">open</string>
+    <string name="as_save">as_save</string>
+    <string name="copy">copy</string>
+    <string name="lock">lock</string>
+    <string name="printf">printf</string>
+    <string name="upload">upload</string>
+    <string name="line">line</string>
+    <string name="line_w">line_w</string>
+    <string name="line_h">line_h</string>
+    <string name="please_connect_bluetooth">Por favor conecte a una impresora！</string>
+    <string name="print_number">print_number</string>
+    <string name="please_input_print_number">please_input_print_number</string>
+    <string name="print_now">print_now</string>
+    <string name="connect_now">Conectando...</string>
+    <string name="bluetooth_disconnect">Desconectado</string>
+    <string name="bluetooth_close">Cerrado</string>
+    <string name="system_template">system_template</string>
+    <string name="own_save_template">own_save_template</string>
+    <string name="line_position">line_position</string>
+    <string name="vertical">vertical</string>
+    <string name="horizontal">horizontal</string>
+    <string name="start_search">Buscando...</string>
+    <string name="stop_search">Busqueda detenida.</string>
+    <string name="permissions_are_rejected">permissions_are_rejected</string>
+    <string name="to_set_up">to_set_up</string>
+    <string name="permissions_are_rejected_bluetooth">permissions_are_rejected_bluetooth</string>
+    <string name="delete_file_prompt">delete_file_prompt！</string>
+    <string name="already_paired">Emparejados</string>
+    <string name="unpaired">unpaired</string>
+    <string name="nearby_bluetooth">Nuevos dispositivos</string>
+    <string name="current_printer">current_printer</string>
+    <string name="modify">modify</string>
+    <string name="address">address</string>
+    <string name="name_colon">Nombre：</string>
+    <string name="address_colon">Direccion：</string>
+    <string name="bluetooth_is_being_connected">Conectando...</string>
+    <string name="bluetooth_name">bluetooth_name</string>
+    <string name="please_input_bluetooth_name">please_input_bluetooth_name</string>
+    <string name="setting">setting</string>
+    <string name="multilingual">multilingual</string>
+    <string name="current_version">current_version</string>
+    <string name="please_select_language">please_select_language？</string>
+    <string name="please_select_folder">please_select_folder</string>
+    <string name="chinese">chinese</string>
+    <string name="english">english</string>
+    <string name="traditional_chinese">traditional_chinese</string>
+    <string name="japanese">japanese</string>
+    <string name="korean">korean</string>
+    <string name="spanish">spanish</string>
+    <string name="french">french</string>
+    <string name="coming_soon">coming_soon</string>
+    <string name="printer_professional_manufacturer">printer_professional_manufacturer</string>
+    <string name="chang_languge_pro">chang_languge_pro！</string>
+    <string name="default_">default_</string>
+    <string name="edit_the_picture">edit_the_picture？</string>
+    <string name="to_cut">to_cut</string>
+    <string name="do_not_cut">do_not_cut</string>
+    <string name="save_now">save_now</string>
+    <string name="load_now">load_now</string>
+    <string name="delete">delete</string>
+    <string name="threshold">threshold</string>
+    <string name="two_value_pro">two_value_pro！</string>
+    <string name="printf_concentration">Buscar</string>
+    <string name="un_lock">un_lock</string>
+    <string name="add_bitmap_compress">add_bitmap_compress</string>
+    <string name="serialize">serialize</string>
+    <string name="serialize_type">serialize_type</string>
+    <string name="change">change</string>
+    <string name="file">file</string>
+    <string name="select_file">select_file</string>
+    <string name="current_file_number">current_file_number：</string>
+    <string name="please_input">please_input</string>
+    <string name="content_no_serialize">content_no_serialize</string>
+    <string name="please_select_printf_type">please_select_printf_type</string>
+    <string name="ordinary_printf">ordinary_printf</string>
+    <string name="serialize_printf">serialize_printf</string>
+    <string name="select_file_error">select_file_error</string>
+    <string name="print_now_NO">print_now_NO</string>
+    <string name="zhang">zhang</string>
+    <string name="printf_finish">Termino de busqueda</string>
+    <string name="printf_error_check">Error</string>
+    <string name="cancel_new">cancel_new</string>
+    <string name="cancel_printf">Cancelar</string>
+    <string name="paper_setting">paper_setting</string>
+    <string name="total_paper">total_paper：</string>
+    <string name="surplus_paper">surplus_paper：</string>
+    <string name="surplus_paper_no">surplus_paper_no</string>
+    <string name="already_printf_paper">already_printf_paper：</string>
+    <string name="please_total_paper">please_total_paper</string>
+    <string name="setting_paper_pro">setting_paper_pro</string>
+    <string name="label_no_content">label_no_content</string>
+    <string name="time_format">yyyy-MM-dd HH:mm</string>
+    <string name="printf_type">printf_type：</string>
+    <string name="print_number_colon">print_number_colon：</string>
+    <string name="content_to_long">content_to_long</string>
+    <string name="chang_bluetooth_name_success">chang_bluetooth_name_success</string>
+    <string name="chang_bluetooth_name_fail">chang_bluetooth_name_fail</string>
+    <string name="chang_bluetooth_name_now">chang_bluetooth_name_now</string>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="6dp">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+      >
+
+        <TextView
+            android:id="@+id/titulon"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="COMPUTADORA HP"
+            android:textColor="@color/atex" />
+
+
+        <ImageView
+            android:id="@+id/colorestatusnotificaciones"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="5dp"
+android:tint="@color/ablu"
+            android:src="@drawable/circule_24dp"
+            android:textAlignment="center"
+
+
+           />
+        <TextView
+            android:id="@+id/ubicacionarean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titulon"
+            android:padding="1dp"
+            android:text="Ubicacion/area"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/folion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="453543664"
+android:layout_below="@id/ubicacionarean"
+            android:textColor="@color/black"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/fechan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/colorestatusnotificaciones"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/foto"
+            android:text="12 Junio 2012"
+            android:textAlignment="center"
+android:textSize="10dp"
+            android:textColor="#FF5722" />
+        <TextView
+            android:id="@+id/mensajen"
+            android:text="El articulo no a llegado dfdsfds sdfdsfdsf sdfdsfds dsfdsfds sdfds"
+android:lines="3"
+            android:textSize="12dp"
+            android:layout_below="@id/folion"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:padding="1dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

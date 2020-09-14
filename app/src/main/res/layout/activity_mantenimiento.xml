@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+    android:background="@color/white"
+android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tituloscategoria"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/ARED"
+        android:fontFamily="sans-serif"
+        android:foregroundGravity="center"
+        android:freezesText="true"
+        android:gravity="center"
+        android:text="Mantenimiento"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/al1"
+        android:layout_below="@id/tituloscategoria"
+        android:weightSum="4"
+        >
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:text="Motivo de mantenimiento:"
+            android:textAlignment="center"
+            android:textColor="@color/atex"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/motivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="14dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/atex" />
+    </LinearLayout>
+
+    <Button
+
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="Agregar"
+        android:id="@+id/btnagregar"
+        style="@style/btnred"
+        android:layout_below="@id/al1"/>
+
+    <TextView
+        android:id="@+id/tt"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Historial:"
+        android:textAlignment="center"
+        android:textColor="@color/atex"
+        android:layout_below="@id/btnagregar"
+        android:textSize="14dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@id/tt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+</RelativeLayout>

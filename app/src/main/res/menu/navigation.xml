@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/incidencia"
+        android:icon="@drawable/scan"
+        android:title="SCAN"
+
+        />
+    <item
+        android:id="@+id/agregar"
+        android:icon="@drawable/plus"
+        android:title="Agregar"
+
+        />
+    <item
+        android:id="@+id/articulos"
+        android:icon="?android:attr/actionModeWebSearchDrawable"
+        android:title="Articulos"
+
+        />
+    <item
+        android:id="@+id/configuracion"
+        android:icon="@drawable/settings"
+        android:title="Configuración"
+
+        />
+
+
+
+</menu>

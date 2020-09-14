@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvUserRigthComment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/fondo"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/ivrigthUserComent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivrigthUserComent" />
+
+    <TextView
+        android:id="@+id/tvCommentRigthCooment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/fondo"
+        android:maxLines="4"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/ivrigthUserComent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserRigthComment" />
+
+    <ImageView
+        android:id="@+id/ivrigthUserComent"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_account_circle_black_24dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

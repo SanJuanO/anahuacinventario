@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+    android:background="@color/white"
+android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tituloscategoria"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/ARED"
+        android:fontFamily="sans-serif"
+        android:foregroundGravity="center"
+        android:freezesText="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Notificación"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@id/tituloscategoria"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Configuracion"
+    android:background="#D3D1D1"
+    >
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/r1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white">
+
+
+
+                <ImageView
+                    android:id="@+id/un"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/ubicacion"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/areasadd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14dp"
+                    android:layout_toEndOf="@+id/dos"
+                    android:backgroundTint="@color/black"
+                    android:text="Areas"
+                    android:onClick="areasadd"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/areasad"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/next" />
+                <View
+                    android:layout_below="@id/areasad"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="50dp"
+                    android:background="@color/black"/>
+                <ImageView
+                    android:id="@+id/un2"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/ubicacion"
+                    android:layout_below="@+id/areasadd"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/subarreaadd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14dp"
+                    android:layout_toEndOf="@+id/dos"
+                    android:backgroundTint="@color/black"
+                    android:text="SubAreas"
+                    android:onClick="areasadd"
+                    android:layout_below="@id/areasad"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/subaareaadd"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/un"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/next" />
+                <View
+                    android:layout_below="@id/subarreaadd"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="50dp"
+                    android:background="@color/black"/>
+                <ImageView
+                    android:id="@+id/uno"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_below="@id/un2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/pin"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/ubicacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/subaareaadd"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/uno"
+                    android:backgroundTint="@color/black"
+                    android:text="Ubicaciones"
+                    android:textSize="14dp"
+
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black" />
+
+                <ImageView
+                    android:id="@+id/nombren"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_below="@+id/un2"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/next" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/ubicacion"
+                    android:layout_marginStart="50dp"
+                    android:background="@color/black" />
+
+                <ImageView
+                    android:id="@+id/dos"
+                    android:layout_width="15dp"
+                    android:layout_height="19dp"
+                    android:layout_below="@id/uno"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/category"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/categoriaadd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/uno"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/dos"
+                    android:backgroundTint="@color/black"
+                    android:text="Clases"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/dosnombre"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_below="@id/uno"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/next" />
+                <View
+                    android:layout_below="@id/categoriaadd"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="50dp"
+                    android:background="@color/black"/>
+                <ImageView
+                    android:id="@+id/dd"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_below="@id/dos"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/costos"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/centrocostos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dos"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/dos"
+                    android:backgroundTint="@color/black"
+                    android:text="Centro de Costos"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/cc"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_below="@id/dos"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/next" />
+                <View
+                    android:layout_below="@id/centrocostos"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="50dp"
+                    android:background="@color/black"/>
+                <ImageView
+                    android:id="@+id/tt"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_below="@id/dd"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/medidas"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/unidadb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dd"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/dd"
+                    android:backgroundTint="@color/black"
+                    android:text="Unidades de Medida"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/uni"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_below="@id/dd"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/next" />
+                <View
+                    android:layout_below="@id/unidadb"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/black"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@id/r1"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+android:id="@+id/r2"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/uno2"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/electricfactory" />
+                <TextView
+                    android:id="@+id/fabrica"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14dp"
+                    android:text="Provedores"
+                    android:textColorHighlight="@color/black"
+                    android:backgroundTint="@color/black"
+                    android:layout_toEndOf="@+id/uno2"
+                    android:textColor="@color/black"
+                    />
+
+                <ImageView
+                    android:id="@+id/nombren2"
+                    android:layout_width="20sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="20sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/next" />
+
+                <View
+                    android:layout_below="@id/fabrica"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="50dp"
+                    android:background="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/dos3"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_below="@id/uno2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/product" />
+
+                <TextView
+                    android:id="@+id/informes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/uno2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14dp"
+                    android:layout_toEndOf="@+id/dos3"
+                    android:backgroundTint="@color/black"
+                    android:text="Informes"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+
+                    />
+                <ImageView
+                    android:id="@+id/vendedoradd"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@id/uno2"
+                    android:src="@drawable/next"/>
+                <View
+                    android:layout_below="@id/informes"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:layout_marginStart="50dp"
+                    android:background="@color/black"/>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_below="@id/r2"
+                android:id="@+id/r3"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/dos2"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:tint="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@android:drawable/ic_lock_power_off" />
+
+                <TextView
+                    android:id="@+id/close"
+                    android:layout_width="match_parent"
+                    android:textSize="14dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/dos2"
+                    android:backgroundTint="@color/black"
+                    android:text="Cerrar sesión"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+
+                    />
+                <ImageView
+                    android:id="@+id/dosnombre6"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/next"/>
+                <View
+                    android:layout_below="@id/close"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="1dp"
+
+                    android:layout_marginStart="50dp"
+                    android:background="@color/black"/>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

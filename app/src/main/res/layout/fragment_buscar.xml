@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Fragment.Buscar">
+
+
+    <RelativeLayout
+        android:id="@+id/clHeaderProductosList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvNombreProductosCategoriasList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="10dp"
+            android:text="Ingresa el artículo"
+
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <ImageButton
+            android:id="@+id/busqudedaconfg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+
+
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+android:background="@drawable/preferencia2"
+            />
+
+
+    </RelativeLayout>
+
+
+    <GridView
+        android:id="@+id/listaProductosProductosList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:numColumns="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clHeaderProductosList" />
+
+
+    <EditText
+        android:id="@+id/etBuscarProductosProductosList"
+        style="@style/editext"
+        android:layout_width="0dp"
+        android:imeOptions="actionSearch"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:drawableRight="@android:drawable/ic_menu_search"
+        android:ems="10"
+        android:hint="Buscar"
+        android:inputType="none|text"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clHeaderProductosList" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewb"
+        android:layout_below="@id/etBuscarProductosProductosList"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

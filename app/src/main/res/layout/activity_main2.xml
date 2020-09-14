@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Main2Activity">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/tituloscategoria"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/ARED"
+            android:foregroundGravity="center"
+            android:freezesText="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Imagenes"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif"
+            android:textSize="18sp"
+            />
+        <ImageButton
+            android:id="@+id/agregarfoto"
+            android:layout_width="70dp"
+            android:background="@color/ARED"
+            android:tint="@color/white"
+            android:onClick="agregarfoto"
+            android:src="@drawable/plus"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:text="Button" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/imageRecycler2"
+            android:layout_below="@id/tituloscategoria"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

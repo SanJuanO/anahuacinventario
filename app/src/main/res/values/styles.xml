@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="title">
+        <item name="android:background">@color/ARED</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppThemeMyLight" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">#0091ea</item>
+    </style>
+    <style name="custom_btn_orange">
+        <item name="android:background">@drawable/selector_btn_orange</item>
+        <item name="android:textColor">@color/ARED</item>
+    </style>
+    <style name="spiner">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:radius">8dp</item>
+
+    </style>
+    <style name="btnred">
+        <item name="android:background">@drawable/selector_btn_red</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="editext">
+        <item name="android:background">@drawable/selector_edit</item>
+        <item name="android:textColor">@color/black</item>
+
+
+    </style>
+
+    <style name="spinner_style" >
+        <item name="android:background">@drawable/edit</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+</resources>
