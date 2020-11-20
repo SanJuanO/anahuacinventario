@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.microsoft.services:discovery-services:1.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/40bf1eff42c1db081e2f855c1a7af02f/jetified-discovery-services-1.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/40bf1eff42c1db081e2f855c1a7af02f/jetified-discovery-services-1.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/61354bdb84fdaa294916b11148923d14/jetified-discovery-services-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/61354bdb84fdaa294916b11148923d14/jetified-discovery-services-1.0.0/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.microsoft.services/discovery-services/1.0.0/d2153843d9106540e36291d11fa316ab8d77b340/discovery-services-1.0.0-javadoc.jar!/" />
